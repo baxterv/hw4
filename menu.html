@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		 <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		<title>Menu</title>
+
+	</head>
+	<body>
+		<div class="content-box">
+			<a href="index.html"><img class="logo" src="img/logo.png" alt="Dawg Pizza Logo"></a>
+
+			<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="order.html">Order Here!</a></li>
+			</ul>
+			</nav>
+
+			<div class="menu-body">
+
+            <h1>Menu</h1>
+				<p style="text-align: center;">All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:
+				<br><br>
+	        	Small (12")<br>
+	       		Medium (14")<br>
+	       		Large (17")</p>
+
+	    		<p class="modifications">All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
+	    		<!-- container for pizza entries -->
+	    		<h2>Meat Pies</h2>
+	    		<div class="meat">
+	    			
+	    		</div>
+	    		
+	    		<h2>Vegetarian Pies</h2>
+	    		<div class="vegetarian">	   
+	    		</div>
+	
+            	<div class="pizza-template">
+                		<dl>
+                		<dt class="pizza-name"></dt>
+                		<dd class="pizza-description">
+                		</dd>
+                		
+                	</dl>		                
+             	</div> <!-- pizza-template -->
+
+             	<img class="order" src="img/pizza-order.jpg" alt="Order Counter">
+
+             	<!-- container for drinks entries -->
+             	<h2>Drinks</h2>
+             	<div class="drinks-menu"></div>
+           	
+             	<div class="drinks-template">
+             		<span class="drink"></span>
+             	</div> <!-- drinks-template -->
+
+             	<h2>Desserts</h2>
+             	<!-- container for dessert entries -->
+             	<div class="dessert-menu"></div>
+
+             	<div class="dessert-template">		
+             		<span class="dessert"></span>
+             	</div> <!-- dessert-template -->
+				
+
+        	</div> <!-- (removed CONTAINER CLASS) menu-body -->
+
+		</div> <!-- content-box -->
+
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<p class="navbar-text pull-left">&copy; 2013 Dawg Pizza</p>
+				<p class="navbar-text pull-left">Phone: (206) 555-1212</p>
+				<a href="https://twitter.com/DawgPizzaSea" class="twitter-follow-button pull-right navbar-btn" data-show-count="false" data-size="large">Follow @DawgPizzaSea</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+				</div>
+			</div>
+
+		
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+        <script src="http://www.dawgpizza.com/orders/menu.js"></script>
+		
+		<script src="js/render-menu.js"></script>		
+	</body>
+</html>

@@ -1,0 +1,33 @@
+
+h2 {
+	font-size: 110%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.dessert-menu {
+	margin-bottom: 20px;
+}
+
+.drinks-menu {
+	margin-bottom: 20px;
+}
+
+dd {
+	padding-bottom: 20px;
+}
+
+dt {
+	padding-bottom: 5px;
+}
+
+hr {
+	background-color: #D87F45;
+	height:1px;
+	margin-bottom: 1px;
+	margin-top: 1px;
+}
+
+.delivery-restrictions {
+	text-align: center;
+}
