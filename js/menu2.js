@@ -3,7 +3,7 @@ $(function() {
 
 });
 
-
+//adds pizza information to a template
 function renderPizzas() {
 	var idx;
 	var pizza;
@@ -46,6 +46,7 @@ function renderPizzas() {
     } //for each pizza
 } 
 
+//adds drinks information to a template
 function renderDrinks() {
 	var idx;
 	var drink;
@@ -67,6 +68,7 @@ function renderDrinks() {
 	} // for each drink
 }
 
+//adds dessert information to a template
 function renderDesserts() {
 	var idx;
 	var dessert;

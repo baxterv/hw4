@@ -33,24 +33,16 @@ $(function(){
 
         //render the cart's contents to the element
         //we're using to contain the cart information
-        //note that you would need a <div> or some
-        //other grouping element on the page that has a
-        //style class of 'cart-container'
         renderCart(cart, $('.cart-container'));
     });
-
-    // $('.remove-item').click(function(){
-    //     var idxToRemove = this.getAttribute('data-index');
-    //     cart.items.splice(idxToRemove, 1);
-
-    //     renderCart(cart, $('.cart-container'));
-    // });
 
     $('.empty-cart').click(function(){
         cart.items = [];
         renderCart(cart,$('.cart-container'));
     });
 
+    //checks all required info is filled out before
+    //submitting the form
     $('.place-order').click(function(){
 
         var signupForm = $('.signup-form');
@@ -140,14 +132,14 @@ function renderCart(cart, container) {
     } //for each cart item
 
     //renders tax and total price for the order
-
     var tax = subtotal * 0.095; // calculate tax
     var total=subtotal+tax; //add tax to subtotal
     $('.subtotal-amount').html(subtotal.toFixed(2));
     $('.tax-amount').html(tax.toFixed(2));
     $('.total-price').html(total.toFixed(2));
 
-
+    //removes the selected item from the cart and
+    //re-renders it
     $('.remove-item').click(function(){
         var idxToRemove = this.getAttribute('data-index');
         cart.items.splice(idxToRemove, 1);

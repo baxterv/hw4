@@ -5,7 +5,8 @@ $(function() {
 	renderDesserts();
 });
 
-
+//fills in pizza information for the order page
+//adds buttons to add to cart
 function renderPizzas() {
 	var idx;
 	var pizza;
@@ -31,6 +32,8 @@ function renderPizzas() {
     } //for each pizza
 } 
 
+//fills in drinks information for the order page
+//adds buttons to add to cart
 function renderDrinks() {
 	var idx;
 	var drink;
@@ -47,6 +50,8 @@ function renderDrinks() {
 	} // for each drink
 }
 
+//fills in dessert information for the order page
+//adds buttons to add to cart
 function renderDesserts() {
 	var idx;
 	var dessert;
